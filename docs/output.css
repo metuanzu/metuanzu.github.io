@@ -833,6 +833,9 @@
   .field-sizing-fixed {
     field-sizing: fixed;
   }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
   .size-3\.5 {
     width: calc(var(--spacing) * 3.5);
     height: calc(var(--spacing) * 3.5);
@@ -887,9 +890,6 @@
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
-  }
-  .h-\[600px\] {
-    height: 600px;
   }
   .h-\[var\(--radix-select-trigger-height\)\] {
     height: var(--radix-select-trigger-height);
