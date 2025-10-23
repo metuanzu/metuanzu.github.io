@@ -1,0 +1,14 @@
+<p class="font-semibold text-xl text-gray-800 mb-4">The core challenge of any advanced autonomous vehicle is the flight control system (FCS). For ANZU, we chose the highly versatile ArduPilot platform, but customization was key.</p>
+
+<p>ArduPilot is an **open-source flight control system** that powers a wide range of vehicles, from planes to submarines. Its flexibility allowed us to tailor the code and hardware integration specifically for our unique quadrotor design and mission requirements.</p>
+
+<h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">Hardware Integration: The Pixhawk Brain</h3>
+<p>Our FCS utilizes a Pixhawk-variant autopilot board. This powerful microcontroller is responsible for taking inputs from the GPS, IMU (Inertial Measurement Unit), barometer, and our custom sensors. It then executes the control loops that translate desired movement into motor commands.</p>
+
+<ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+    <li>**Redundancy:** We implemented dual IMU sensors for fault detection and improved stability, critical for reliable data acquisition.</li>
+    <li>**Real-Time Kinematics (RTK):** Integration of an RTK GPS module allows for centimeter-level positioning accuracy, vital for precise mapping missions.</li>
+</ul>
+
+<h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">Software and Tuning</h3>
+<p>While the hardware handles the raw data, the software is where the magic happens. We've spent countless hours tuning the **PID controllers** (Proportional-Integral-Derivative) to ensure ANZU's flight characteristics are robust against wind, load changes, and aggressive maneuvers. The result is a highly stable and responsive aircraft that can carry its full payload without sacrificing performance.</p>
