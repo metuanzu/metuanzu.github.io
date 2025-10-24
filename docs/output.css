@@ -833,6 +833,9 @@
   .field-sizing-fixed {
     field-sizing: fixed;
   }
+  .aspect-auto {
+    aspect-ratio: auto;
+  }
   .aspect-video {
     aspect-ratio: var(--aspect-video);
   }
